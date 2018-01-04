@@ -79,7 +79,11 @@ miniBit.addBlock(new Block(1, "01/08/2018", {amount: 120}));
 
 // ********************************************************************************
 // Below shows basic implementation of blockchain.
+
 // Also shows how changing data and recalculating hash still invalidates the chain.
+
+// The proof of work makes recalculating and changing all subsequent hashes nearly,
+// impossible with a simple increase to the difficulty.
 // ********************************************************************************
 
 console.log(JSON.stringify(miniBit.chain, null, 4));
